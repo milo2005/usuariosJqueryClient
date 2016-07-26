@@ -6,6 +6,11 @@ module.exports = {
         filename:"build.js",
         path:"./build"
     },
+    module:{
+        loaders:[
+            {test:/\.css$/, loader:"style-loader!css-loader"}
+        ]
+    },
     plugins: [
         new webpack.optimize.UglifyJsPlugin(),
         new htmlWebpackPlugin({
