@@ -5,13 +5,13 @@ var extractWebpackPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     entry:"./src/app",
     output:{
-        filename:"build.js",
+        filename:"js/build.js",
         path:"./build"
     },
     module:{
         loaders:[
-            {test:/\.css$/
-            , loader:extractWebpackPlugin.extract("style-loader","css-loader")}
+            {test:/\.css$/, loader:extractWebpackPlugin.extract("style-loader","css-loader")}
+            ,{test: /\.(ttf|woff|woff2|eot)$/,loader: 'file?name=fonts/roboto/[name].[ext]'}
         ]
     },
     plugins: [
@@ -19,6 +19,6 @@ module.exports = {
         new htmlWebpackPlugin({
             template:"index.html"
         }),
-        new extractWebpackPlugin("style.css")
+        new extractWebpackPlugin("css/style.css")
     ]
 };
