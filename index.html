@@ -1,58 +1,223 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Usuarios</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-    <body>
-        <main>
-            <nav class="blue">
-                <div class=" nav-wrapper">
-                    <span class="brand-logo pl">Usuarios</span>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="navbar-fixed">
+            <nav class="white">
+                <div class=" nav-wrapper container">
+                    <h3 class="blue-text thin">Usuarios</h3>
                     <ul class="right">
                         <li class="hide-on-med-and-down">
-                            <a class="white-text waves-effect waves-light btn-flat">Informacion</a>
+                            <a id="btn-txt-search" class="grey-text text-darken-1 waves-effect waves-light btn-flat">Buscar</a>
                         </li>
                         <li class="hide-on-med-and-down">
-                            <a class="white-text waves-effect btn-flat">Acerca</a>
+                            <a id="btn-txt-in" class="grey-text text-darken-1 waves-effect waves-light btn-flat">Entrar</a>
                         </li>
 
                         <li class="hide-on-large-only">
-                            <a class="btn-icon">
-                                <i class="material-icons">info</i>
+                            <a class="btn-icon" id="btn-icon-search">
+                                <i class="grey-text text-darken-1 material-icons">search</i>
                             </a>
                         </li>
 
                         <li class="hide-on-large-only">
-                            <a class="btn-icon">
-                                <i class="material-icons">help</i>
+                            <a class="btn-icon" id="btn-icon-in">
+                                <i class="grey-text text-darken-1 material-icons">account_circle</i>
                             </a>
                         </li>
 
                     </ul>
                 </div>
             </nav>
+        </div>
+
+        <header class="section-image center-crop valign-wrapper" style="background-image:url('assets/images/4.jpg')">
 
             <div class="container row">
-                <div class="card blue-grey col s12 m6">
-                    <div class="white-text card-content">
-                        <span class="card-title">Registrate</span>
-                    </div>
-                    <div class="card-action">
-                        <a>Listo !</a>
-                    </div>
+                <div class="col s12 m5">
+                    <h1 class="white-text thin">Gestion de Usuarios</h1>
+                    <p class="white-text">Crea, elimina, actualiza y encuentra en el banco de usuarios mas grande del mundo</p>
                 </div>
-                <div class="card green col s12 m6">
-                    <div class="white-text card-content">
-                        <span class="card-title">Iniciar</span>
-                    </div>
-                    <div class="card-action">
-                        <a>Entrar !</a>
+                <div class="card panel-transparent col s12 m5 offset-m1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Registrate</span>
+                        <form>
+                            <div class="input-field">
+                                <input id="name" type="text" class="validate">
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="ced" type="number" class="validate">
+                                <label for="ced">Cedula</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="usr" type="text" class="validate">
+                                <label for="usr">Usuario</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="pass" type="text" class="validate">
+                                <label for="pass">Contraseña</label>
+                            </div>
+                            <div class="row">
+                                <input name="genero" type="radio" id="m" value="M" checked/>
+                                <label class="white-text" for="m">Hombre</label>
+                                <input name="genero" type="radio" id="f" value="F" />
+                                <label class="white-text" for="f">Mujer</label>
+                            </div>
+                            <div class="row">
+                                <a class="col s12 waves-effect waves-light btn blue">Listo</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
+        </header>
+        <section class="container">
+            <div class="row">
+                <div class="item col s12 m4">
+                    <img src="assets/images/item1.png" alt="">
+                    <h4>Usuarios</h4>
+                    <p class="flow-text">Ten acceso al Api de usuarios y realiza consultas inteligentes</p>
+                </div>
+                <div class="item col s12 m4">
+                    <img src="assets/images/item4.png" alt="">
+                    <h4>Tu idea</h4>
+                    <p class="flow-text">Crea nuevos productos y servicios, al alcance de tu mano</p>
+                </div>
+                <div class="item col s12 m4">
+                    <img src="assets/images/item3.png" alt="">
+                    <h4>Localización</h4>
+                    <p class="flow-text">Localiza a los usuarios en cualquier parte del mundo</p>
+                </div>
+            </div>
+        </section>
 
-        </main>
-    </body>
+        <section class="section-image center-crop" style="background-image:url('assets/images/1.jpg')">
+
+        </section>
+
+        <section class="container">
+            <h2 class="thin">Noticias</h2>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <div class="news-image center-crop" style="background-image:url('assets/images/3.jpg')"></div>
+                            <span class="card-title">Se programador</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Aprende a desarrollar como un experto con las capacitaciones de Parquesoft Pasto, en tecnologias
+                                web.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="green-text">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <div class="news-image center-crop" style="background-image:url('assets/images/5.jpg')"></div>
+                            <span class="card-title">Metodologias de desarrollo</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Metodologias agiles como scrum cambian el flujo de desarrollo, realizando un acercamiento con
+                                el cliente y los interesados.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="green-text">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <div class="news-image center-crop" style="background-image:url('assets/images/2.jpg')"></div>
+                            <span class="card-title">Modelado</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Aprende a estructurar y modelar aplicaciones web y moviles, considerando patrones de diseño responsivos
+                                y atractivos.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="green-text">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer grey darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Contactanos</h5>
+                        <p class="grey-text text-lighten-4">Calle falsa 123.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Siguenos</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3">Facebook</a></li>
+                            <li><a class="grey-text text-lighten-3">Twitter</a></li>
+                            <li><a class="grey-text text-lighten-3">Google +</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    Powered by Dario Chamorro
+                    <a class="grey-text text-lighten-4 right">Buscanos</a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </main>
+
+    <!--Boton flotante-->
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">mail</i></a>
+    </div>
+
+    <!--MODALES-->
+
+    <!--Login-->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Inciar Sesion</h4>
+            <form>
+                <div class="input-field col s6">
+                    <input id="login-user" type="text" class="validate">
+                    <label for="login-user">Usuario</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input id="login-pass" type="password" class="validate">
+                    <label for="" login-pass ">First Name</label>
+        </div>
+
+            </form>
+        </div>
+        <div class="modal-footer ">
+            <a class=" modal-action modal-close waves-effect waves-green btn-flat ">Aceptar</a>
+        </div>
+    </div>
+
+
+    <!--Scripts Globales-->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js "></script>
+    
+</body>
+
 </html>

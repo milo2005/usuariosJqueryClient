@@ -11,7 +11,8 @@ module.exports = {
     module:{
         loaders:[
             {test:/\.css$/, loader:extractWebpackPlugin.extract("style-loader","css-loader")}
-            ,{test: /\.(ttf|woff|woff2|eot)$/,loader: 'file?name=fonts/roboto/[name].[ext]'}
+            ,{test: /\.(ttf|woff|woff2|eot)$/,loader: 'file?name=assets/fonts/roboto/[name].[ext]'}
+             ,{test: /\.(png|jpe?g|gif)$/,loader: 'file?name=assets/images/[name].[ext]'}
         ]
     },
     plugins: [

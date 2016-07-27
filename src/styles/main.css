@@ -7,10 +7,67 @@ html, body, main {
     height: 100vh;
 }
 
-.brand-logo.pl{
+/*Spaces*/
+.pl{
     padding-left: 10px;
+}
+.mr{
+    margin-right: 10px;
+}
+
+
+/*Design*/
+
+.nav-wrapper h3{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
 }
 
 .clickable{
     cursor: pointer;
+}
+
+.center-crop{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.section-image{
+    min-height: 600px;
+}
+
+
+.panel-transparent{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.item{
+    text-align: center;
+    min-height: 400px;
+    margin: 80px 0px 80px 0px;
+}
+
+.item img{
+    width: 160px;
+    height: 160px;
+}
+
+.news-image{
+    height: 200px;
+}
+
+
+/*TEST*/
+
+.test1{
+    background: red;
+}
+
+.test2{
+    background: green;
 }
