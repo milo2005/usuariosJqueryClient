@@ -19,7 +19,6 @@ $("#btn-reg").click(function(){
 
     var usr = {nombre: nombre, cedula: cedula, genero: genero, auth: auth};
 
-    console.log(JSON.stringify(usr));
 
     $.ajax({
         method:"POST",
