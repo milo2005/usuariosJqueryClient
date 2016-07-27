@@ -1,3 +1,16 @@
-button{
-    color: red;
+*{
+    box-sizing: border-box;
+}
+
+html, body, main {
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.brand-logo.pl{
+    padding-left: 10px;
+}
+
+.clickable{
+    cursor: pointer;
 }
