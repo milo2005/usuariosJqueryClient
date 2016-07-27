@@ -5,7 +5,7 @@ var extractWebpackPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     entry:"./src/app",
     output:{
-        filename:"js/build.js",
+        filename:"build.js",
         path:"./build"
     },
     module:{
@@ -19,6 +19,6 @@ module.exports = {
         new htmlWebpackPlugin({
             template:"index.html"
         }),
-        new extractWebpackPlugin("css/style.css")
+        new extractWebpackPlugin("style.css")
     ]
 };
