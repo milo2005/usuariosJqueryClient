@@ -2,7 +2,9 @@
   "name": "usuarios-client",
   "version": "1.0.0",
   "description": "Cliente de la aplicacion de usuarios",
-  "scripts": {},
+  "scripts": {
+    "start":"lite-server -c bs-config.json"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
